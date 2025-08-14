@@ -1,3 +1,5 @@
+import os 
+
 def skip():
     input("Введите Enter для продолжения...")
     os.system('cls' if os.name == 'nt' else 'clear')
@@ -2469,7 +2471,7 @@ I created http://bit[.]ly/example. Please send recovery mail.
             elif vib_str == "2":
                 print("Какой регион?")
                 print("[1]Любой, [2]Москва, [3]Алтайский край")
-                vib_str_ru = inpiut()
+                vib_str_ru = input()
                 if vib_str_ru == "1":    
                     print("""
 
@@ -3619,7 +3621,7 @@ https://globe.adsbexchange.com/?icao=HEX
 
 """)
             skip()
-        elif vbr_tr == "5":
+        elif vib_tr == "5":
             print("""
 
 Поиск по имени судна
@@ -4272,3 +4274,4 @@ https://globe.adsbexchange.com/?icao=HEX
     else:
         print('Попробуйте еще раз')
         skip()
+
